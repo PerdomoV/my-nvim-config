@@ -1,0 +1,2 @@
+require("primal")
+print("Hello")
