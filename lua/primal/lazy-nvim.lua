@@ -24,9 +24,9 @@ local plugins = {
 	{'hrsh7th/nvim-cmp'},
 	{'L3MON4D3/LuaSnip'},
 	{'tpope/vim-surround'},
-	{'tpope/vim-commentary'}
+	{'tpope/vim-commentary'},
+  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
 }
 
 
 require("lazy").setup(plugins, opts)
-require("lazy").setup({{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}})
