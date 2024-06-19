@@ -17,8 +17,16 @@ local plugins = {
 		tag = '0.1.6',
 		dependencies = { 'nvim-lua/plenary.nvim' }
     	},
-	{ "rose-pine/neovim", name = "rose-pine" }
+	{ "rose-pine/neovim", name = "rose-pine" },
+	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+	{'neovim/nvim-lspconfig'},
+	{'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/nvim-cmp'},
+	{'L3MON4D3/LuaSnip'},
+	{'tpope/vim-surround'},
+	{'tpope/vim-commentary'}
 }
 
 
 require("lazy").setup(plugins, opts)
+require("lazy").setup({{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}})
