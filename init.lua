@@ -1,2 +1,1 @@
 require("primal")
-print("Hello")
